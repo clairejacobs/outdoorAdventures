@@ -1,0 +1,16 @@
+ body {
+   display: grid;
+   grid-template-rows: repeat (12, 1fr);
+   grid-template-columns: repeat (6, 1fr);
+   grid-gap: 10px;
+   grid-auto-flow: column;
+ }
+
+ .box {
+    color: white;
+    font-size: 2vh;
+    padding: 10px;
+    background: gold;
+    margin: 0;
+    text-align: center;
+    }

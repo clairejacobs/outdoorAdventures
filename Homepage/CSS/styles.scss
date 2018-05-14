@@ -1,5 +1,5 @@
-
-body {
+// declaring that my webpage will be in grids//
+#container {
   display: grid;
   grid-template-columns:repeat(6,1fr);
   grid-template-rows: 100px 100px 1000px 2000px 100px;
@@ -13,26 +13,38 @@ body {
    font-family: 'Montserrat', sans-serif;
 }
 
-.jumplinks{
-  grid-area: aside;
-  background-color: #F59466;
+body {
+  background:url("hero__image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
+// styling my aside bar//
+.jumplinks{
+  grid-area: aside;
+  background-color: #0D842A	;
+  color: white;
+}
+
+//styling my main heading with a background image//
 header {
   grid-area: header;
-  background-image: url("../homepage_imgs/pexels-photo-138600.jpeg");
+  background-color: #0D842A;
   background-size: cover;
   background-position: center;
 }
 
+//centering my main heading and font color//
 h1 {
   text-align: center;
   color: white;
 }
 
+// adding background color to my nav, font-size and using nesting//
 nav {
   grid-area: nav;
-  background-color: #F59466;
+  background-color: #0D842A;
   font-size: 20px;
   li {
     float: left;
@@ -40,11 +52,12 @@ nav {
     margin-left: 270px;
   }
 }
-
+//removing the bullets to my nav//
 .mainNav_li {
   list-style-type: none;
 }
 
+//styling my anchor tags//
 a {
   text-decoration: none;
 }
@@ -67,15 +80,41 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  img {
-    border: 5px solid white;
-  }
 }
 
 section {
   grid-area: section;
 }
+// styling article section//
 
+
+.camping1 {
+  border: 3px solid white;
+  width: 35%;
+  background-color: #0D842A;
+}
+
+.hiking1 {
+  border: 3px solid white;
+  width: 60%;
+  background-color: #0D842A;
+  float: right;
+}
+
+.fishing1 {
+  border: 3px solid white;
+  width: 60%;
+  background-color: #0D842A;
+  float: left;
+}
+
+.rc {
+  border: 3px solid white;
+  width: 60%;
+  background-color: #0D842A;
+  float: right;
+
+}
 h3{
   text-decoration: underline;
 }

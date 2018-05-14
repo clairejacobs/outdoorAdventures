@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="CSS/styles.scss">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
+
   <body>
+    <div id="container">
      <header>
        <h1>OUTDOOR ADVENTURES</h1>
      </header>
      <nav>
        <ul>
         <li class="mainNav_li"><a href="#">HOME</a></li>
-        <li class="mainNav_li"><a href="#">ABOUT</a></li>
+        <li class="mainNav_li"><a href="#">GALLERY</a></li>
         <li class="mainNav_li"><a href="#">CONTACT</a></li>
        </ul>
         </nav>
 
         <article>
-       <img src="homepage_imgs/camping.jpeg" width="100%" height="50%"alt="">
-       <img src="homepage_imgs/fishing.jpeg" width="100%" height="50%" alt="">
-       <img src="homepage_imgs/hiking.jpeg" width="100%" height="50%" alt="">
-       <img src="homepage_imgs/rockclimbing.jpeg" width="100%" height="50%" alt="">
+       <a href="#camping"><img src="homepage_imgs/camping.jpeg" width="100%" height="100%"alt=""></a>
+       <a href="#fishing"><img src="homepage_imgs/fishing.jpeg" class="fishing" width="100%" height="100%" alt=""></a>
+       <a href="#hiking"><img src="homepage_imgs/hiking.jpeg" width="100%" height="100%" alt=""></a>
+       <a href="#rockclimbing"><img src="homepage_imgs/rockclimbing.jpeg" width="100%" height="100%" alt=""></a>
+
       </article>
 
       <aside class="jumplinks">
@@ -31,10 +34,23 @@
         <h5><a href="https://www.capeunionmart.co.za/">CAMPING EQUIPMENT</a></h5>
         <h5><a href="https://www.safarinow.com/destinations/western-cape/hub.aspx?source=8261&gclid=Cj0KCQjw28_XBRDhARIsAEk21FiqJDviWyVAxfAPPlir92-vWBwVt6A5MJRzoVArtj850SZkJYUP2fYaAqWkEALw_wcB&gclsrc=aw.ds">ACCOMMODATION</a></h5>
         <h5><a href="https://www.capetownmagazine.com/hikes-overview">CAPE TOWN MAGAZINE</a>
+          <h5><a href="https://www.campandclimb.co.za/">OUTDOOR SHOPPING</a></h5>
       </aside>
+
      <section>
+       <div class="camping1">
+         <ol>
+           <h3 id="camping">Camping</h3>
+           <li><h4>AFRICAMPS BOUTIQUE</h4></li>
+           <li><h4>OEWERZICHT COTTAGES</h4></li>
+           <li><h4>CITRUSDAL NATURAL HOTSPRINGS</h4></li>
+           <li><h4>TWEEDE TOL WORCESTER</h4></li>
+           <li><h4>PALMIET-KLEINMOND</h4></li>
+         </ol>
+       </div>
+       <div class="hiking1">
        <ol>
-       <h3>Hiking</h3>
+       <h3 id="hiking">Hiking</h3>
          <li><h4>SKELETON GORGE</h4>
            Known for its popularity among locals and tourists, Skeleton Gorge is a scenic trek not rivalled by many. Ideal in dry conditions, this hike is great for both the seasoned and novice hiker. During the summer months you’ll be able to get some shade along the Afromontane forest nearly all the way up Skeleton Gorge. Bear in mind that this hike can get quite strenuous so be prepared to really work those muscles, and take the necessary safety precautions.
            <p>Number of routes: Two routes</p>
@@ -55,11 +71,11 @@
              This short summit offers panoramic views of Cape Town and unbeatable sunsets. It’s a popular route to do on nights where there’s a full moon. If you’re relatively fit, you’ll find yourself at the top quite quickly, which is why it’s such a popular after-work hike. There’s a little bit of climbing involved, but there are handholds and chains to help you on your way up and down. You can also take the roundabout way, which skips the climbing part if you are walking with small children or dogs.
              <p>Number of routes: Two routes</p>
              <p>Difficulty: Moderate.</li></p>
-
          </ol>
-
+       </div>
+       <div class="fishing1">
          <ol>
-          <h3>Fishing</h3>
+          <h3 id="fishing">Fishing</h3>
            <li><h4>FRESH WATER FISHING</h4>
            This is available at Clan William Olifants River. The river is 285km. What you can expect to catch here are Clan William sand fish, Barnard's Klipbaber and Clan William yellow fish. A fishing permit is compulsory and can be obtained at the Cape Nature Reserve.</li>
            <li><h4>BOTLIERSKOP GAME RESERVE</h4>
@@ -71,17 +87,19 @@
            <li><h4>VAALVLEI FLY FISHING</h4>
            Located in Stanford.</li>
          </ol>
-
+       </div>
+       <div class="rc">
          <ol>
-          <h3>Rock Climbing</h3>
+          <h3 id="rockclimbing">Rock Climbing</h3>
             <li><h4>BAINSKLOOF ROCK CLIMBING</h4></li>
             <li><h4>WOLFBERG ROCK CLIMBING</h4></li>
             <li><h4>CERES, CASTLE ROCKS</h4></li>
             <li><h4>ELANDS BAY</h4></li>
             <li><h4>MONTAGU<h4></li>
           </ol>
+        </div>
      </section>
-
+   </div>
      <footer></footer>
 
 
@@ -89,5 +107,6 @@
 
 
 
+   </div>
   </body>
 </html>
