@@ -7,7 +7,7 @@
   font-family: "Montserrat", sans-serif; }
 
 body {
-  background: url("hero__image.jpg");
+  background: url("bg-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,7 +16,15 @@ body {
 .jumplinks {
   grid-area: aside;
   background-color: #0D842A;
-  color: white; }
+  color: white;
+  padding: 25px; }
+
+.jumplinks a {
+  color: white;
+  text-decoration: none; }
+
+.jumplinks a:hover {
+  font-style: italic; }
 
 header {
   grid-area: header;
@@ -28,20 +36,11 @@ h1 {
   text-align: center;
   color: white; }
 
-nav {
-  grid-area: nav;
-  font-size: 20px; }
-  nav li {
-    float: left;
-    padding: 20px;
-    margin-left: 270px; }
-
 .navbar {
+  grid-area: nav;
   overflow: hidden;
-  background-color: #333;
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-}
+  background-color: #0D842A;
+  font-family: "Montserrat", sans-serif; }
 
 .navbar a {
   float: left;
@@ -50,10 +49,6 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none; }
-
-.dropdown {
-  float: left;
-  overflow: hidden; }
 
 .dropdown .dropbtn {
   font-size: 16px;
@@ -66,13 +61,13 @@ nav {
   margin: 0; }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red; }
+  background-color: black; }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: #0D842A;
+  width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
 
@@ -85,10 +80,11 @@ nav {
   text-align: left; }
 
 .dropdown-content a:hover {
-  background-color: #ddd; }
+  background-color: white; }
 
 .dropdown:hover .dropdown-content {
-  display: block; }
+  display: block;
+  margin-left: 12.2%; }
 
 article {
   grid-area: article;

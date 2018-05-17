@@ -16,7 +16,7 @@ $mainFont: 'Montserrat', sans-serif;;
 }
 
 body {
-  background:url("hero__image.jpg");
+  background:url("bg-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,6 +27,16 @@ body {
   grid-area: aside;
   background-color:$mainBackgroundColor;
   color: white;
+  padding: 25px;
+}
+
+.jumplinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.jumplinks a:hover {
+  font-style: italic;
 }
 
 //styling my main heading with a background image//
@@ -44,21 +54,11 @@ h1 {
 }
 
 // adding background color to my nav, font-size and using nesting//
-nav {
-  grid-area: nav;
-  font-size: 20px;
-  li {
-    float: left;
-    padding: 20px;
-    margin-left: 270px;
-  }
-}
-//removing the bullets to my nav//
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: $mainFont;
-    width: 100%;
+  grid-area: nav;
+  overflow: hidden;
+  background-color: $mainBackgroundColor;
+  font-family: $mainFont;
 }
 
 .navbar a {
@@ -70,10 +70,7 @@ nav {
     text-decoration: none;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
+
 
 .dropdown .dropbtn {
     font-size: 16px;
@@ -87,14 +84,14 @@ nav {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: black;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: $mainBackgroundColor;
+    width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -109,11 +106,12 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: white;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    margin-left: 12.2%;
 }
 
 article {
