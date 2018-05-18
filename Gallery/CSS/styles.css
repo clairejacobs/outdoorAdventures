@@ -1,3 +1,4 @@
+/* styling the overall body of the webpage */
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("bg-01.jpg");
@@ -6,12 +7,14 @@ body {
   background-attachment: fixed;
   color: white; }
 
+/*styling the navbar  */
 .navbar {
   overflow: hidden;
   background-color: #0D842A;
   font-family: "Montserrat", sans-serif;
   padding: 25px; }
 
+/*styling the navbar links*/
 .navbar a {
   float: left;
   font-size: 16px;
@@ -20,10 +23,12 @@ body {
   padding: 14px 16px;
   text-decoration: none; }
 
+/*styling the dropdown  */
 .dropdown {
   float: left;
   overflow: hidden; }
 
+/*styling the dropdown button*/
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -34,9 +39,11 @@ body {
   font-family: inherit;
   margin: 0; }
 
+/*styling the links*/
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: black; }
 
+/*styling the content*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -59,21 +66,35 @@ body {
 .dropdown:hover .dropdown-content {
   display: block; }
 
+/*styling the main heading*/
 h1 {
   font-size: 50px;
   text-align: center; }
 
+/*styling the category headings*/
 h2 {
   font-size: 25px; }
 
+/*designing my webpage with grids*/
 .grid_gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; }
 
-@media only screen and (max-width: 320px) {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr; }
+/*responsive design*/
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("bg-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    width: 100%; }
+
+  .grid_gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
 /*# sourceMappingURL=styles.css.map */
