@@ -1,3 +1,5 @@
+/*styles for homeepage*/
+/*declaring that my webpage will be in grids*/
 #container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -6,13 +8,15 @@
   grid-gap: 10px;
   font-family: "Montserrat", sans-serif; }
 
+/*styling my body*/
 body {
-  background: url("bg-01.jpg");
+  background: url("../images/bg-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white; }
 
+/*styling my aside bar*/
 .jumplinks {
   grid-area: aside;
   background-color: #0D842A;
@@ -36,6 +40,7 @@ h1 {
   text-align: center;
   color: white; }
 
+/*adding background color to my nav, font-size*/
 .navbar {
   grid-area: nav;
   overflow: hidden;
@@ -50,6 +55,7 @@ h1 {
   padding: 14px 16px;
   text-decoration: none; }
 
+/*styling the dropdown*/
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -86,6 +92,7 @@ h1 {
   display: block;
   margin-left: 12.2%; }
 
+/*styling the images*/
 article {
   grid-area: article;
   grid-column: 2/7;
@@ -169,5 +176,103 @@ footer {
   footer {
     grid-area: footer;
     grid-row: 11/12; } }
+/* styling the overall body of the webpage */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("bg-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; }
+
+/*styling the navbar  */
+.navbar {
+  overflow: hidden;
+  background-color: #0D842A;
+  font-family: "Montserrat", sans-serif;
+  padding: 25px; }
+
+/*styling the navbar links*/
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+/*styling the dropdown  */
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+/*styling the dropdown button*/
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+/*styling the links*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black; }
+
+/*styling the content*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+.dropdown-content a:hover {
+  background-color: #0D842A; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/*styling the main heading*/
+h1 {
+  font-size: 50px;
+  text-align: center; }
+
+/*styling the category headings*/
+h2 {
+  font-size: 25px; }
+
+/*designing my webpage with grids*/
+.grid_gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+/*responsive design*/
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("bg-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    width: 100%; }
+
+  .grid_gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
 /*# sourceMappingURL=styles.css.map */

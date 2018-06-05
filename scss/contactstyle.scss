@@ -10,9 +10,10 @@ $mainFont: 'Montserrat', sans-serif;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility; 
 }
 
+/*styling the body of the webpage*/
 body {
   font-family: $mainFont;
   font-weight: 100;
@@ -22,13 +23,14 @@ body {
   background-image: url("../images/bg-01.jpg")
 }
 
-
+/*styling the navbar*/
 .navbar {
   overflow: hidden;
   background-color: #0D842A;
   font-family: "Montserrat", sans-serif;
   padding: 25px; }
 
+  /*styling the navbar links*/
 .navbar a {
   float: left;
   font-size: 16px;

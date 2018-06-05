@@ -1,11 +1,11 @@
 /* styling the overall body of the webpage */
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("bg-01.jpg");
+  background-image: url("../images/bg-01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white; }
+  color: white; } 
 
 /*styling the navbar  */
 .navbar {
@@ -85,7 +85,7 @@ h2 {
 @media only screen and (max-width: 600px) {
   body {
     font-family: "Montserrat", sans-serif;
-    background-image: url("bg-01.jpg");
+    background-image: url("../images/bg-01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

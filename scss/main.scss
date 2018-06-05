@@ -1,0 +1,58 @@
+/*
+Error: Invalid CSS after "grid": expected expression (e.g. 1px, bold), was ";"
+        on line 4 of css/main.css
+
+1: /*styles for homeepage*\/
+2: /*declaring that my webpage will be in grids*\/
+3: #container {
+4:   display: grid;
+5:   grid-template-columns: repeat(6, 1fr);
+6:   grid-template-rows: 100px 100px 1000px 2000px 100px;
+7:   grid-template-areas: "header header header header header header" "nav nav nav nav nav nav" "aside article article article article article" "section section section section section section" "footer footer footer footer footer footer";
+8:   grid-gap: 10px;
+9:   font-family: "Montserrat", sans-serif; }
+
+Backtrace:
+css/main.css:4
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/parser.rb:762:in `assert_done'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/parser.rb:69:in `parse'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/parser.rb:228:in `parse'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script.rb:27:in `parse'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:1177:in `parse_script'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:749:in `parse_property'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:708:in `parse_property_or_rule'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:667:in `parse_line'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:540:in `build_tree'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:559:in `block in append_children'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:558:in `each'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:558:in `append_children'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:549:in `block in build_tree'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:542:in `each'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:542:in `build_tree'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:559:in `block in append_children'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:558:in `each'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:558:in `append_children'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:417:in `_to_tree'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"grid\": expected expression (e.g. 1px, bold), was \";\"\A         on line 4 of css/main.css\A \A 1: /*styles for homeepage*/\A 2: /*declaring that my webpage will be in grids*/\A 3: #container {\A 4:   display: grid;\A 5:   grid-template-columns: repeat(6, 1fr);\A 6:   grid-template-rows: 100px 100px 1000px 2000px 100px;\A 7:   grid-template-areas: \"header header header header header header\" \"nav nav nav nav nav nav\" \"aside article article article article article\" \"section section section section section section\" \"footer footer footer footer footer footer\";\A 8:   grid-gap: 10px;\A 9:   font-family: \"Montserrat\", sans-serif; }"; }
