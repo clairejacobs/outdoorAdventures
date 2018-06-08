@@ -20,9 +20,10 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #0D842A;
+  background-color: #CF2906;
   font-family: "Montserrat", sans-serif;
-  padding: 25px; }
+  padding: 25px; 
+  opacity: 0.70;}
 
 .navbar a {
   float: left;
@@ -52,7 +53,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #0D842A;
+  background-color: #CF2906;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
@@ -140,7 +141,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background-color: #CF2906;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
