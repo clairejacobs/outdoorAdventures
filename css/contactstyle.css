@@ -9,7 +9,7 @@
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; } 
-
+/* styling of overall body */
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
@@ -17,7 +17,7 @@ body {
   line-height: 30px;
   color: #777;
   background-image: url("../images/bg-01.jpg"); }
-
+/* styling the nav bar */
 .navbar {
   overflow: hidden;
   background-color: #CF2906;
@@ -25,6 +25,7 @@ body {
   padding: 25px; 
   opacity: 0.70;}
 
+  /* styling the nav bar links */
 .navbar a {
   float: left;
   font-size: 16px;
@@ -33,6 +34,7 @@ body {
   padding: 14px 16px;
   text-decoration: none; }
 
+  /* styling the dropdown  */
 .dropdown {
   float: left;
   overflow: hidden; }
@@ -47,9 +49,11 @@ body {
   font-family: inherit;
   margin: 0; }
 
+  /* styling all links */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: black; }
 
+  /* styling the dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -58,6 +62,7 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
 
+  /* styling the dropdown content links */
 .dropdown-content a {
   float: none;
   color: black;
@@ -104,6 +109,7 @@ body {
   font-size: 13px;
   font-weight: 400; }
 
+  /* styling the fieldset */
 fieldset {
   border: medium none !important;
   margin: 0 0 10px;
@@ -137,6 +143,7 @@ fieldset {
   max-width: 100%;
   resize: none; }
 
+  /* styling the submit button */
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
